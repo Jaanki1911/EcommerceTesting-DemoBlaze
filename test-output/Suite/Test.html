@@ -1,0 +1,289 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>42/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Sep 13 12:21:54 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>670 seconds (670020 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testscripts.ContactTest.contactTest()'><b>contactTest</b><br>Test class: testscripts.ContactTest<br>Parameters: {contactemail=sophia.baker@example.com, contactname=Sophia Baker, message=Problem with payment.}</td>
+<td></td>
+<td>6</td>
+<td>testscripts.ContactTest@46cdf8bd</td></tr>
+<tr>
+<td title='testscripts.ContactTest.contactTest()'><b>contactTest</b><br>Test class: testscripts.ContactTest<br>Parameters: {contactemail=james.wilson@example.com, contactname=James Wilson, message=Request for product info.}</td>
+<td></td>
+<td>6</td>
+<td>testscripts.ContactTest@46cdf8bd</td></tr>
+<tr>
+<td title='testscripts.LoginTestCase.signInFunc()'><b>signInFunc</b><br>Test class: testscripts.LoginTestCase</td>
+<td></td>
+<td>12</td>
+<td>testscripts.LoginTestCase@26d9b808</td></tr>
+<tr>
+<td title='testscripts.HomeTest.copyRight()'><b>copyRight</b><br>Test class: testscripts.HomeTest</td>
+<td></td>
+<td>0</td>
+<td>testscripts.HomeTest@771a660</td></tr>
+<tr>
+<td title='testscripts.SignUpTestCase.contactTest()'><b>contactTest</b><br>Test class: testscripts.SignUpTestCase<br>Parameters: {password=B3nj@minScott!, username=Benjamin Scott}</td>
+<td></td>
+<td>11</td>
+<td>testscripts.SignUpTestCase@f78a47e</td></tr>
+<tr>
+<td title='testscripts.SignUpTestCase.contactTest()'><b>contactTest</b><br>Test class: testscripts.SignUpTestCase<br>Parameters: {password=I5ab3llaH!2024, username=Isabella Hughes}</td>
+<td></td>
+<td>11</td>
+<td>testscripts.SignUpTestCase@f78a47e</td></tr>
+<tr>
+<td title='testscripts.HomeTest.dispCheck()'><b>dispCheck</b><br>Test class: testscripts.HomeTest</td>
+<td></td>
+<td>0</td>
+<td>testscripts.HomeTest@771a660</td></tr>
+<tr>
+<td title='testscripts.CartTestCase.CartTest()'><b>CartTest</b><br>Test class: testscripts.CartTestCase<br>Parameters: {Credit Card Number=5256 7391 2345 6781, Month=11, Country=UK, City=London, Year=2024, Name=Olivia Martin}</td>
+<td></td>
+<td>43</td>
+<td>testscripts.CartTestCase@740cae06</td></tr>
+<tr>
+<td title='testscripts.LoginTestCase.loginTest()'><b>loginTest</b><br>Test class: testscripts.LoginTestCase<br>Parameters: {password=H@rp3rC!ark2024, username=Harper Clark}</td>
+<td></td>
+<td>8</td>
+<td>testscripts.LoginTestCase@26d9b808</td></tr>
+<tr>
+<td title='testscripts.SignUpTestCase.contactTest()'><b>contactTest</b><br>Test class: testscripts.SignUpTestCase<br>Parameters: {password=MarkZuk@356, username=Mark Zuker}</td>
+<td></td>
+<td>11</td>
+<td>testscripts.SignUpTestCase@f78a47e</td></tr>
+<tr>
+<td title='testscripts.SignUpTestCase.contactTest()'><b>contactTest</b><br>Test class: testscripts.SignUpTestCase<br>Parameters: {password=Oliv1aM@rtin123, username=Olivia Martin}</td>
+<td></td>
+<td>11</td>
+<td>testscripts.SignUpTestCase@f78a47e</td></tr>
+<tr>
+<td title='testscripts.HomeTest.btnCheck()'><b>btnCheck</b><br>Test class: testscripts.HomeTest</td>
+<td></td>
+<td>0</td>
+<td>testscripts.HomeTest@771a660</td></tr>
+<tr>
+<td title='testscripts.HomeTest.slideShowCheck()'><b>slideShowCheck</b><br>Test class: testscripts.HomeTest</td>
+<td></td>
+<td>0</td>
+<td>testscripts.HomeTest@771a660</td></tr>
+<tr>
+<td title='testscripts.ContactTest.contactTest()'><b>contactTest</b><br>Test class: testscripts.ContactTest<br>Parameters: {contactemail=isabella.hughes@example.com, contactname=Isabella Hughes, message=Can't access my account.}</td>
+<td></td>
+<td>6</td>
+<td>testscripts.ContactTest@46cdf8bd</td></tr>
+<tr>
+<td title='testscripts.LoginTestCase.loginTest()'><b>loginTest</b><br>Test class: testscripts.LoginTestCase<br>Parameters: {password=D@ni3lM0rg@n!, username=Daniel Morgan}</td>
+<td></td>
+<td>10</td>
+<td>testscripts.LoginTestCase@26d9b808</td></tr>
+<tr>
+<td title='testscripts.LoginTestCase.loginTest()'><b>loginTest</b><br>Test class: testscripts.LoginTestCase<br>Parameters: {password=I5ab3llaH!2024, username=Isabella Hughes}</td>
+<td></td>
+<td>9</td>
+<td>testscripts.LoginTestCase@26d9b808</td></tr>
+<tr>
+<td title='testscripts.LoginTestCase.loginTest()'><b>loginTest</b><br>Test class: testscripts.LoginTestCase<br>Parameters: {password=Soph!aB@k3r2024, username=Sophia Baker}</td>
+<td></td>
+<td>8</td>
+<td>testscripts.LoginTestCase@26d9b808</td></tr>
+<tr>
+<td title='testscripts.ContactTest.contactTest()'><b>contactTest</b><br>Test class: testscripts.ContactTest<br>Parameters: {contactemail=daniel.morgan@example.com, contactname=Daniel Morgan, message=Order delay complaint.}</td>
+<td></td>
+<td>6</td>
+<td>testscripts.ContactTest@46cdf8bd</td></tr>
+<tr>
+<td title='testscripts.HomeTest.sideNavBarCheck()'><b>sideNavBarCheck</b><br>Test class: testscripts.HomeTest</td>
+<td></td>
+<td>1</td>
+<td>testscripts.HomeTest@771a660</td></tr>
+<tr>
+<td title='testscripts.LoginTestCase.loginTest()'><b>loginTest</b><br>Test class: testscripts.LoginTestCase<br>Parameters: {password=Al3xJ@rd@n2024, username=Alex Jordan}</td>
+<td></td>
+<td>9</td>
+<td>testscripts.LoginTestCase@26d9b808</td></tr>
+<tr>
+<td title='testscripts.AboutUsTest.aboutUsCheck()'><b>aboutUsCheck</b><br>Test class: testscripts.AboutUsTest</td>
+<td></td>
+<td>10</td>
+<td>testscripts.AboutUsTest@f0c8a99</td></tr>
+<tr>
+<td title='testscripts.ContactTest.contactTest()'><b>contactTest</b><br>Test class: testscripts.ContactTest<br>Parameters: {contactemail=olivia.martin@example.com, contactname=Olivia Martin, message=Need assistance with order.}</td>
+<td></td>
+<td>6</td>
+<td>testscripts.ContactTest@46cdf8bd</td></tr>
+<tr>
+<td title='testscripts.SignUpTestCase.contactTest()'><b>contactTest</b><br>Test class: testscripts.SignUpTestCase<br>Parameters: {password=Al3xJ@rd@n2024, username=Alex Jordan}</td>
+<td></td>
+<td>11</td>
+<td>testscripts.SignUpTestCase@f78a47e</td></tr>
+<tr>
+<td title='testscripts.SignUpTestCase.contactTest()'><b>contactTest</b><br>Test class: testscripts.SignUpTestCase<br>Parameters: {password=D@ni3lM0rg@n!, username=Daniel Morgan}</td>
+<td></td>
+<td>11</td>
+<td>testscripts.SignUpTestCase@f78a47e</td></tr>
+<tr>
+<td title='testscripts.LoginTestCase.loginTest()'><b>loginTest</b><br>Test class: testscripts.LoginTestCase<br>Parameters: {password=J@m3sWils0n!, username=James Wilson}</td>
+<td></td>
+<td>8</td>
+<td>testscripts.LoginTestCase@26d9b808</td></tr>
+<tr>
+<td title='testscripts.ContactTest.contactTest()'><b>contactTest</b><br>Test class: testscripts.ContactTest<br>Parameters: {contactemail=alex.jordan@example.com, contactname=Alex Jordan, message=Wrong item received.}</td>
+<td></td>
+<td>6</td>
+<td>testscripts.ContactTest@46cdf8bd</td></tr>
+<tr>
+<td title='testscripts.ContactTest.contactTest()'><b>contactTest</b><br>Test class: testscripts.ContactTest<br>Parameters: {contactemail=harper.clark@example.com, contactname=Harper Clark, message=Missing product inquiry.}</td>
+<td></td>
+<td>6</td>
+<td>testscripts.ContactTest@46cdf8bd</td></tr>
+<tr>
+<td title='testscripts.ContactTest.terminateCheck()'><b>terminateCheck</b><br>Test class: testscripts.ContactTest</td>
+<td></td>
+<td>0</td>
+<td>testscripts.ContactTest@46cdf8bd</td></tr>
+<tr>
+<td title='testscripts.CartTestCase.CartTest()'><b>CartTest</b><br>Test class: testscripts.CartTestCase<br>Parameters: {Credit Card Number=3714 4967 4321 8902, Month=7, Country=Canada, City=Toronto, Year=2021, Name=James Wilson}</td>
+<td></td>
+<td>44</td>
+<td>testscripts.CartTestCase@740cae06</td></tr>
+<tr>
+<td title='testscripts.ContactTest.cLinkCheck()'><b>cLinkCheck</b><br>Test class: testscripts.ContactTest</td>
+<td></td>
+<td>4</td>
+<td>testscripts.ContactTest@46cdf8bd</td></tr>
+<tr>
+<td title='testscripts.SignUpTestCase.registerFunc()'><b>registerFunc</b><br>Test class: testscripts.SignUpTestCase</td>
+<td></td>
+<td>6</td>
+<td>testscripts.SignUpTestCase@f78a47e</td></tr>
+<tr>
+<td title='testscripts.HomeTest.HyperLinksCheck()'><b>HyperLinksCheck</b><br>Test class: testscripts.HomeTest</td>
+<td></td>
+<td>0</td>
+<td>testscripts.HomeTest@771a660</td></tr>
+<tr>
+<td title='testscripts.LoginTestCase.loginTest()'><b>loginTest</b><br>Test class: testscripts.LoginTestCase<br>Parameters: {password=B3nj@minScott!, username=Benjamin Scott}</td>
+<td></td>
+<td>8</td>
+<td>testscripts.LoginTestCase@26d9b808</td></tr>
+<tr>
+<td title='testscripts.SignUpTestCase.contactTest()'><b>contactTest</b><br>Test class: testscripts.SignUpTestCase<br>Parameters: {password=Soph!aB@k3r2024, username=Sophia Baker}</td>
+<td></td>
+<td>11</td>
+<td>testscripts.SignUpTestCase@f78a47e</td></tr>
+<tr>
+<td title='testscripts.HomeTest.productLinksCheck()'><b>productLinksCheck</b><br>Test class: testscripts.HomeTest</td>
+<td></td>
+<td>95</td>
+<td>testscripts.HomeTest@771a660</td></tr>
+<tr>
+<td title='testscripts.SignUpTestCase.contactTest()'><b>contactTest</b><br>Test class: testscripts.SignUpTestCase<br>Parameters: {password=H@rp3rC!ark2024, username=Harper Clark}</td>
+<td></td>
+<td>11</td>
+<td>testscripts.SignUpTestCase@f78a47e</td></tr>
+<tr>
+<td title='testscripts.ContactTest.contactTest()'><b>contactTest</b><br>Test class: testscripts.ContactTest<br>Parameters: {contactemail=benjamin.scott@example.com, contactname=Benjamin Scott, message=How to track my shipment?}</td>
+<td></td>
+<td>6</td>
+<td>testscripts.ContactTest@46cdf8bd</td></tr>
+<tr>
+<td title='testscripts.SignUpTestCase.contactTest()'><b>contactTest</b><br>Test class: testscripts.SignUpTestCase<br>Parameters: {password=J@m3sWils0n!, username=James Wilson}</td>
+<td></td>
+<td>11</td>
+<td>testscripts.SignUpTestCase@f78a47e</td></tr>
+<tr>
+<td title='testscripts.CartTestCase.CartTest()'><b>CartTest</b><br>Test class: testscripts.CartTestCase<br>Parameters: {Credit Card Number=4532 7812 3456 7890, Month=9, Country=USA, City=New York, Year=2020, Name=Alex Jordan}</td>
+<td></td>
+<td>45</td>
+<td>testscripts.CartTestCase@740cae06</td></tr>
+<tr>
+<td title='testscripts.HomeTest.footer()'><b>footer</b><br>Test class: testscripts.HomeTest</td>
+<td></td>
+<td>0</td>
+<td>testscripts.HomeTest@771a660</td></tr>
+<tr>
+<td title='testscripts.HomeTest.imageCheck()'><b>imageCheck</b><br>Test class: testscripts.HomeTest</td>
+<td></td>
+<td>3</td>
+<td>testscripts.HomeTest@771a660</td></tr>
+<tr>
+<td title='testscripts.LoginTestCase.loginTest()'><b>loginTest</b><br>Test class: testscripts.LoginTestCase<br>Parameters: {password=Oliv1aM@rtin123, username=Olivia Martin}</td>
+<td></td>
+<td>9</td>
+<td>testscripts.LoginTestCase@26d9b808</td></tr>
+</table><p>
+</body>
+</html>
